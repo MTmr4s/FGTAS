@@ -77,9 +77,10 @@
 
 
             public function incluir() {
+                
             $conexao = new Conexao();
             $conn = $conexao->fazConexao();
-    
+           
             $sql = "INSERT INTO atendimento (idFormaAtendimento, idPerguntaPublico, ativo, respostaAtendimento,  idUsuario) VALUES (:idFormaAtendimento, :idPerguntaPublico, :ativo, :respostaAtendimento, :idUsuario)";
             $stmt = $conn->prepare($sql);
             $stmt->bindValue(':idFormaAtendimento', $this->getIdFormaAtendimento());
@@ -87,7 +88,8 @@
             $stmt->bindValue(':respostaAtendimento', $this->getRespostaAtendimento());
             $stmt->bindValue(':ativo', $this->getAtivo());
             $stmt->bindValue(':idUsuario', $this->getIdUsuario());
-    
+                 
+         
             $res = $stmt->execute();
     
             if ($res) {

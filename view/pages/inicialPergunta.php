@@ -13,7 +13,7 @@ $idPublico= $_REQUEST['idPublico'];
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         body {
-            background-color: #f4f4f4;
+            background-color: grey;
             font-family: Arial, sans-serif;
         }
         h1 {

@@ -72,6 +72,7 @@ class PerguntaModel{
         $stmt->bindValue(':descricaoPergunta', $this->getDescricaoPergunta());
 
         $res = $stmt->execute();
+        $idPerguntaPublico = $conn->lastInsertId();
 
         if ($res) {
             echo "<script>alert('Cadastro realizado com sucesso!!!');</script>";

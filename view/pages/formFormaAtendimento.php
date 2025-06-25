@@ -44,7 +44,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         body {
-            background-color: #f4f4f4;
+            background-color: grey;
             font-family: Arial, sans-serif;
         }
         .form-container {
@@ -111,6 +111,7 @@
             
             <input type="hidden" name="op" value="<?php echo $operacao;?>">
             <input type="hidden" name="idFormAtendimento" value="<?php echo $idFormAtendimento;?>">
+            <input type="hidden" name="idPerguntaPublico" value="<?php echo $idPerguntaPublico; ?>">
             
             <?php echo $divContentAtivo;?>
             <input type="submit" value="Enviar">
