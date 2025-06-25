@@ -57,12 +57,11 @@ function incluir(){
    $idUsuario = $_SESSION['idUsuario'];
    $AtendimentoModel = new AtendimentoModel();
    $AtendimentoModel->setIdFormaAtendimento($_POST['idFormaAtendimento']);
-   $AtendimentoModel->setIdPerguntaPublico($_POST['idPerguntaPublico']);
+   $idPerguntaPublico = isset($_POST['idPerguntaPublico']) && $_POST['idPerguntaPublico'] !== '' ? $_POST['idPerguntaPublico'] : 0;
    $AtendimentoModel->setRespostaAtendimento($_POST['respostaAtendimento']);
    $AtendimentoModel->setAtivo('s');
    $AtendimentoModel->setIdUsuario($idUsuario);
    $AtendimentoModel->incluir();
-    
     
 }
 

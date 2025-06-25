@@ -18,7 +18,7 @@ class Conexao {
         }
 
         return $this->conn;
-        return 'alisson';
+       
     }
 }
 ?>
